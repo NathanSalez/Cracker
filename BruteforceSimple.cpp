@@ -7,7 +7,7 @@
 namespace hack
 {
 
-    BruteforceSimple::BruteforceSimple( std::string const& p, size_t maxSize, std::vector<char> const& set, size_t minSize) : Bruteforce(p), minLength(minSize), maxLength(maxSize)
+    BruteforceSimple::BruteforceSimple( std::string const& p, size_t maxSize, std::vector<char> const& set, size_t minSize) : Cracker(p), minLength(minSize), maxLength(maxSize)
     {
 
         if( maxSize <= 0 || minSize <= 0 || maxSize < minSize )
@@ -24,7 +24,7 @@ namespace hack
     }
 
 
-    BruteforceSimple::BruteforceSimple(std::string const& p, size_t maxSize, typeSet t, size_t minSize) : Bruteforce(p), minLength(minSize), maxLength(maxSize)
+    BruteforceSimple::BruteforceSimple(std::string const& p, size_t maxSize, typeSet t, size_t minSize) : Cracker(p), minLength(minSize), maxLength(maxSize)
     {
         if( maxSize <= 0 || minSize <= 0 || maxSize < minSize )
             exit(4);

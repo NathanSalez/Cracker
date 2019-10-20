@@ -6,7 +6,7 @@
 
 namespace hack
 {
-    BruteforceDictionnary::BruteforceDictionnary(const std::string& p, const std::string& pathFile) : Bruteforce(p)
+    BruteforceDictionnary::BruteforceDictionnary(const std::string& p, const std::string& pathFile) : Cracker(p)
     {
         if( ! is_readable(pathFile.c_str()))
         {

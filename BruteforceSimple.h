@@ -11,7 +11,7 @@
 //#define __BRUTEFORCE_SIMPLE_DEBUG__
 //#define __BRUTEFORCE_SIMPLE_COUNT_DEBUG
 
-#include "Bruteforce.h"
+#include "Cracker.h"
 
 namespace hack {
 
@@ -39,7 +39,7 @@ namespace hack {
      * Services de la classe :
      * Trouver un mot de passe correspondant à une chaîne chiffrée donnée, à l'aide de la méthode classique d'une attaque par force brute.
      */
-    class BruteforceSimple : public Bruteforce
+    class BruteforceSimple : public Cracker
     {
 
     private :

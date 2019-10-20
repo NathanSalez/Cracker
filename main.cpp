@@ -46,7 +46,7 @@ int main() {
 
     // Permet d'obtenir le nombre de tests effectués en comptant le nombre de lignes du fichier
     // Pour cela, on redirige la sortie clog vers un fichier texte.
-    // Remarque : décommenter la ligne 12 de Bruteforce.h
+    // Remarque : décommenter la ligne 12 de Cracker.h
 #ifdef __BRUTEFORCE_SIMPLE_COUNT_DEBUG
     std::ofstream logOut("tests.txt");
     std::clog.rdbuf(logOut.rdbuf());
@@ -66,7 +66,7 @@ int main() {
 
 void testBot(typeTest mode)
 {
-    hack::Bruteforce * bot = nullptr;
+    hack::Cracker * bot = nullptr;
     std::vector<char> container;
     container.push_back('a');
     container.push_back('b');

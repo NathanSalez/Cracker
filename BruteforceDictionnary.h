@@ -6,7 +6,7 @@
 #define CRACKER_BRUTEFORCEDICTIONNARY_H
 
 #include "fstream"
-#include "Bruteforce.h"
+#include "Cracker.h"
 
 namespace hack {
 
@@ -14,7 +14,7 @@ namespace hack {
      * Services de la classe :
      * Trouver un mot de passe correspondant à une chaîne chiffrée donnée, à l'aide de l'attaque par dictionnaire.
      */
-    class BruteforceDictionnary : public Bruteforce
+    class BruteforceDictionnary : public Cracker
     {
 
     public:

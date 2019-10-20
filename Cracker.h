@@ -2,8 +2,8 @@
 // Created by nsalez on 16/11/18.
 //
 
-#ifndef CRACKER_BRUTEFORCE_H
-#define CRACKER_BRUTEFORCE_H
+#ifndef CRACKER_CRACKER_H
+#define CRACKER_CRACKER_H
 
 #include <iostream>
 #include <string>
@@ -20,7 +20,7 @@ namespace hack {
      * - Obtenir la solution via un string ou via son affichage (getSolution et dispSolution).
      * Cette classe nous permet s'il réussit son crackage, de connaitre le mot de passe d'un utilisateur.
      */
-    class Bruteforce {
+    class Cracker {
 
     protected :
         std::chrono::time_point<std::chrono::system_clock> start;
@@ -48,14 +48,14 @@ namespace hack {
 
     public:
 
-        Bruteforce(Bruteforce const& b) = delete;
+        Cracker(Cracker const& b) = delete;
 
-        Bruteforce& operator=( Bruteforce const& b) = delete;
+        Cracker& operator=(Cracker const& b) = delete;
 
         /**
          * Constructeur par données
          */
-        explicit Bruteforce(std::string const& p);
+        explicit Cracker(std::string const& p);
 
         /**
          * Retourne la durée de recherche du mot de passe, sous la forme d'un double.
@@ -84,11 +84,11 @@ namespace hack {
          */
         virtual size_t getNumberPossibilities() const = 0;
 
-        ~Bruteforce() = default;
+        ~Cracker() = default;
 
     };
 
 }
 
 
-#endif //CRACKER_BRUTEFORCE_H
+#endif //CRACKER_CRACKER_H

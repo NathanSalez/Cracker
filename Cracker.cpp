@@ -2,12 +2,12 @@
 // Created by nsalez on 16/11/18.
 //
 
-#include "Bruteforce.h"
+#include "Cracker.h"
 
 namespace hack
 {
 
-    Bruteforce::Bruteforce(std::string const& p) : passwordFound(false)
+    Cracker::Cracker(std::string const& p) : passwordFound(false)
     {
         /*if(!p.empty()) {
             this->password.resize(p.size());
@@ -17,7 +17,7 @@ namespace hack
     }
 
 
-    void Bruteforce::dispSolution() const
+    void Cracker::dispSolution() const
     {
         if( passwordFound )
             std::cout << "Le mot de passe associé à la chaîne '" << this->password << "' est : '" << this->solution << "'" << std::endl;
@@ -26,13 +26,13 @@ namespace hack
     }
 
 
-    const std::string &Bruteforce::getSolution() const {
+    const std::string &Cracker::getSolution() const {
         return solution;
     }
 
 
 
-    double Bruteforce::getElapsedSearch()
+    double Cracker::getElapsedSearch()
     {
         std::chrono::duration<double> elapsed_seconds = this->end - this->start;
         return elapsed_seconds.count();

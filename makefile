@@ -1,10 +1,10 @@
 all : testBruteforce.exe
 
-testBruteforce.exe : Bruteforce.o BruteforceSimple.o BruteforceDictionnary.o
+testBruteforce.exe : Cracker.o BruteforceSimple.o BruteforceDictionnary.o
 	g++ *.o main.cpp -o testBruteforce.exe
 
-Bruteforce.o :
-	g++ -c Bruteforce.cpp
+Cracker.o :
+	g++ -c Cracker.cpp
 
 BruteforceSimple.o :
 	g++ -c BruteforceSimple.cpp
